@@ -22,7 +22,7 @@ public class GreetingController {
 
     @GetMapping("/greeting-javaconfig")
     public Greeting greetingWithJavaConfig(@RequestParam(required=false, defaultValue="Corgi Lover") String name) {
-        System.out.println("=== In Greeting ===");
+        System.out.println("=== In Greeting: JavaConfig ===");
         return new Greeting(counter.incrementAndGet(),String.format(template, name));
     }
 }

@@ -11,6 +11,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class Application {
 
         public static void main(String[] args) {
+                System.out.println("Hello from webApp!");
+                System.setProperty("server.port","8090");
                 SpringApplication.run(Application.class, args);
         }
 
