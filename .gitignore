@@ -85,3 +85,22 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+/.idea/
+.gradle/
+.idea/ComoCorgis.iml
+.idea/compiler.xml
+.idea/modules.xml
+.idea/modules/application/
+.idea/modules/library/
+.idea/vcs.xml
+META-INF/
+build/tmp/
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+resources/
+static/
+target/comocorgis-0.1.0.jar.original
+target/generated-sources/
+target/maven-archiver/
+target/maven-status/

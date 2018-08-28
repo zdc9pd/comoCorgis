@@ -1,4 +1,4 @@
-package comocorgis;
+package ComoCorgis;
 
 public class Greeting {
 

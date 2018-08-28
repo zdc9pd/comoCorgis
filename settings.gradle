@@ -1,4 +1,1 @@
 rootProject.name = 'ComoCorgis'
-
-include 'webApp'
-include 'webClient'

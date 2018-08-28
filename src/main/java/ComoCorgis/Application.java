@@ -1,4 +1,4 @@
-package comocorgis;
+package ComoCorgis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +12,7 @@ public class Application {
 
         public static void main(String[] args) {
                 System.out.println("Hello from webApp!");
-                System.setProperty("server.port","8090");
+                System.setProperty("server.port","8080");
                 SpringApplication.run(Application.class, args);
         }
 
@@ -21,7 +21,7 @@ public class Application {
                 return new WebMvcConfigurerAdapter() {
                         @Override
                         public void addCorsMappings(CorsRegistry registry) {
-                                registry.addMapping("/greeting-javaconfig").allowedOrigins("http://localhost:9000");
+                                registry.addMapping("/greeting-javaconfig").allowedOrigins("*");
                         }
                 };
         }
