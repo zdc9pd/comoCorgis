@@ -91,10 +91,51 @@
           <div class="form-group">
             <label class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
             </div>
           </div>
-
+          <!-- Phone -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Phone</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputPhone" placeholder="Phone">
+            </div>
+          </div>
+          <!--Other Pets -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Do you have any other pets?</label>
+            <div class="col-sm-10">
+            <label class="radio-inline"><input type="radio" value="yesPet" name="petRadio" onclick="petSelection()">Yes</label>
+            <label class="radio-inline"><input type="radio" value="noPet" name="petRadio" onclick="petSelection()">No</label>
+            </div>
+            <div class="form-group col-sm-12" id="petInput">
+              <label class="col-sm-2 control-label">What do you have?</label>
+              <div class="col-sm-10" >
+                <textarea class="form-control" rows="5" id="otherPets">Please tell us about your other pets</textarea>
+              </div>
+            </div>
+          </div>
+          <!--Do you have children -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Children</label>
+            <div class="col-sm-10">
+              <label class="radio-inline"><input type="radio" value="yesKids" name="kidRadio" onclick="kidSelection()">Yes</label>
+              <label class="radio-inline"><input type="radio" value="noKids" name="kidRadio" onclick="kidSelection()">No</label>
+            </div>
+            <div class="form-group col-sm-12" id="kidInput">
+              <label class="col-sm-2 control-label">Ages?</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3" id="otherKid"></textarea>
+              </div>
+            </div>
+          </div>
+          <!--Living situation -->
+          <!-- House or apartment?-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Housing</label>
+            <label class="radio-inline"><input type="radio" name="optradio">House</label>
+            <label class="radio-inline"><input type="radio" name="optradio">Apartment</label>
+          </div>
 <!--
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
@@ -119,12 +160,8 @@
 </html>
 
 <!--
-Adopter's name
-Adopter's address
-Phone #
-email
-Other pets (type of pet and names)
-Children/ages
+
+
 Do you live in an apartment or house?
 Do you own or rent? (if renting, I need landlord's contact info)
 Describe where the pet will be kept day and night. How many hours will the pet be unattended (alone)?

@@ -104,3 +104,6 @@ target/comocorgis-0.1.0.jar.original
 target/generated-sources/
 target/maven-archiver/
 target/maven-status/
+!/resources/
+!/META-INF/
+!/static/
